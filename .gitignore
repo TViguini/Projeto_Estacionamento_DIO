@@ -1,0 +1,89 @@
+# .NET MAUI Gitignore
+
+## Arquivos e pastas gerados pelo .NET e Visual Studio
+# Pastas de compilação e saída
+[Bb]in/
+[Bb]j/
+
+# Pasta de pacotes NuGet
+[Pp]ackages/
+*.nupkg
+*.snupkg
+
+# Ignorar a pasta .vs, que armazena configurações de usuário do Visual Studio
+.vs/
+
+# Arquivos de configuração de usuário e temporários
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos de log e teste do Visual Studio
+*.log
+*.tlog
+*.dll.config
+*.exe.config
+*.testsettings
+*.trx
+
+## Artefatos de Compilação Específicos das Plataformas MAUI
+
+# Android
+# Arquivos gerados pelo Android Studio/MSBuild
+platforms/Android/build/
+platforms/Android/app/build/
+platforms/Android/app/bin/
+platforms/Android/app/obj/
+platforms/Android/bin/
+platforms/Android/obj/
+*.apk
+*.aab
+
+# iOS & Mac Catalyst
+# Arquivos gerados pelo Xcode/MSBuild
+platforms/iOS/bin/
+platforms/iOS/obj/
+platforms/MacCatalyst/bin/
+platforms/MacCatalyst/obj/
+DerivedData/
+
+# Windows
+# Arquivos gerados pelo MSBuild para a plataforma Windows
+platforms/Windows/bin/
+platforms/Windows/obj/
+platforms/Windows/AppPackages/
+platforms/Windows/Bundle/
+*.pfx
+*.p12
+
+## Arquivos do Sistema Operacional
+# Arquivos do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arquivos do Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+## Arquivos de Ferramentas de Linha de Comando
+# Cache de ferramentas .NET
+.store/
+
+# Arquivos do ReSharper (se você usar)
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Ferramentas de Cobertura de Código
+*.coverage
+*.coveragexml
+
+# Ignorar o diretório de publicação
+[Pp]ublish/
+*.xml
+*.txt
+*.png
+/Projeto_Estacionamento_DIO/obj
