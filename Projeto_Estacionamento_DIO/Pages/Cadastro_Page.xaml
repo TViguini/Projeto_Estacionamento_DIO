@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Estacionamento_DIO.Pages.Cadastro_Page"
+             Title="Cadastro_Page">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+
+            <Label 
+                Text="Dados do Veículo e Proprietário"
+                FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label Text="Placa do Veículo" />
+            <Entry x:Name="PlacaEntry"
+                   Placeholder="Ex: ABC1D23"
+                   MaxLength="7"
+                   Keyboard="Default" />
+
+            <Label Text="Tipo de Veículo" />
+            <Entry x:Name="VeiculoEntry"
+                   Placeholder="Ex: Carro, Moto, Caminhão"
+                   Keyboard="Text" />
+
+            <Label Text="Nome do Proprietário" />
+            <Entry x:Name="NomeEntry"
+                   Placeholder="Digite o nome completo"
+                   Keyboard="Text" />
+
+            <Label Text="Endereço" />
+            <Entry x:Name="EnderecoEntry"
+                   Placeholder="Rua, número, bairro" 
+                   Keyboard="Text"/>
+
+            <Label Text="Telefone" />
+            <Entry x:Name="TelefoneEntry"
+                   Placeholder="(99) 99999-9999"
+                   Keyboard="Telephone" />
+            <Button x:Name="SalvarButton"
+                    Text="Salvar Cadastro"
+                    Clicked="OnSalvarClicked"
+                    Margin="0,20,0,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

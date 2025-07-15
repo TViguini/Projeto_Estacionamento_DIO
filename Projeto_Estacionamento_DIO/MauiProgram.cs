@@ -16,7 +16,7 @@ namespace Projeto_Estacionamento_DIO
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
