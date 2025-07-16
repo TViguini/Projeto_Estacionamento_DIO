@@ -4,16 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Projeto_Estacionamento_DIO.Pages"
-    Title="Projeto_Estacionamento_DIO">
+    Title="Projeto_Estacionamento_DIO"
+    Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:Init_Page}"
         Route="Init_Page" />
 
     <ShellContent
-     Title="Home"
      ContentTemplate="{DataTemplate local:Cadastro_Page}"
      Route="Cadastro_Page" />
+
+    <ShellContent
+     ContentTemplate="{DataTemplate local:Historico_Page}"
+     Route="Historico_Page" />
 
 </Shell>

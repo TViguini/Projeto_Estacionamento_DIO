@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-
+using CommunityToolkit.Maui;
 namespace Projeto_Estacionamento_DIO
 {
     public static class MauiProgram
@@ -9,6 +9,7 @@ namespace Projeto_Estacionamento_DIO
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

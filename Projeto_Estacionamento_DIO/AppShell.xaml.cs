@@ -12,6 +12,7 @@ namespace Projeto_Estacionamento_DIO
         {
             Routing.RegisterRoute("Init_Page", typeof(Init_Page));
             Routing.RegisterRoute("Cadastro_Page", typeof(Cadastro_Page));
+            Routing.RegisterRoute("Historico_Page", typeof(Historico_Page));
         }
     }
 }

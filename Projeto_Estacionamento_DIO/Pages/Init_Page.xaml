@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Estacionamento_DIO.Pages.Init_Page">
-
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -21,26 +20,32 @@
             <Label
                 Text="Aplicação para Cadastro e Cobrança de Estacionamento"
                 Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
+                TextColor="White"  SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Thiago Viguini de Carvalho" />
+
+            <Label
+                Text="Hora Inicial: R$ 8,00  |  Hora Adicional: R$ 2,00"
+                HorizontalOptions="Center"
+                FontSize="Small"
+                Margin="0,0,0,15" />
 
             <Button
                 x:Name="CadastroBtn"
-                Text="Cadastar Veiculo" 
+                Text="Cadasto/Cobrança Veiculo" 
                 Clicked="CadastroClicked"
-                HorizontalOptions="Fill" />
-            
-            <Button
-                x:Name="ConsultarBtn"
-                Text="Consultar Veiculo" 
-                Clicked="CansultarClicked"
                 HorizontalOptions="Fill" />
 
             <Button
                 x:Name="CobrancaBtn"
-                Text="Cobrança" 
+                Text="Finalizar Cobrança" 
                 Clicked="CobrancaClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="ConsultarBtn"
+                Text="Consultar Histórico Veiculo" 
+                Clicked="CansultarClicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
 

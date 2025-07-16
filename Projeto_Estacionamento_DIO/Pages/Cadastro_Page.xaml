@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Projeto_Estacionamento_DIO.Pages.Cadastro_Page"
              Title="Cadastro_Page">
     <ScrollView>
@@ -14,13 +15,12 @@
 
             <Label Text="Placa do Veículo" />
             <Entry x:Name="PlacaEntry"
-                   Placeholder="Ex: ABC1D23"
                    MaxLength="7"
                    Keyboard="Default" />
 
-            <Label Text="Tipo de Veículo" />
+            <Label Text="Modelo do Veículo" />
             <Entry x:Name="VeiculoEntry"
-                   Placeholder="Ex: Carro, Moto, Caminhão"
+                   Placeholder="Ex: HB20, Onix, Hilux"
                    Keyboard="Text" />
 
             <Label Text="Nome do Proprietário" />
@@ -35,8 +35,13 @@
 
             <Label Text="Telefone" />
             <Entry x:Name="TelefoneEntry"
-                   Placeholder="(99) 99999-9999"
-                   Keyboard="Telephone" />
+                Placeholder="(99) 99999-9999"
+                Keyboard="Telephone">
+                <Entry.Behaviors>
+                    <toolkit:MaskedBehavior Mask="(00) 00000-0000" />
+                </Entry.Behaviors>
+            </Entry>
+
             <Button x:Name="SalvarButton"
                     Text="Salvar Cadastro"
                     Clicked="OnSalvarClicked"
